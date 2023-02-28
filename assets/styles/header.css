@@ -34,7 +34,7 @@
     display: block;
 	position: absolute;
 	transition: 0.25s;
-    left: 47vw;
+    left: calc(100% - 193px);
 }
 
 .menu__hamburguer__lista{
