@@ -1,0 +1,8 @@
+@import url("header.css");
+
+:root{
+    --fonte-titulos: 'Calistoga';
+    --fonte-textos: 'Raleway';
+    --azul-escuro: #2E7BA2;
+    --branco: #FFFFFF;
+}
