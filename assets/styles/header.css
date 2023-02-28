@@ -26,14 +26,15 @@
 
 .menu__hamburguer{
     position: absolute;
-	right: -100vw;
-	transition: 0.25s;
+	left: -100vw;
+	transition: 0.75s;
 }
 
 .menu__hamburguer__exibido{
+    display: block;
 	position: absolute;
 	transition: 0.25s;
-	right: 0;
+    left: 47vw;
 }
 
 .menu__hamburguer__lista{
