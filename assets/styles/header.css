@@ -1,5 +1,4 @@
 /* Cabecalho de navegacao */
-
 .cabecalho__menu{
     display: flex;
     background-color: var(--azul-escuro);
@@ -22,8 +21,11 @@
     transition: 0.25s;
 }
 
-/* Menu Hamburguer */
+.cabecalho__menu__lista{
+    display:none;
+}
 
+/* Menu Hamburguer */
 .menu__hamburguer{
     position: absolute;
 	left: -100vw;
@@ -68,4 +70,61 @@
     font-family: var(--fonte-textos);
     font-weight: 700;
     font-size: 20px;
+}
+
+/* ########## MEDIA SCREEN 768px ##########*/
+
+@media screen and (min-width: 768px) {
+
+    .cabecalho__menu{
+        height: 200px;
+        flex-wrap: wrap;
+    }
+
+    .cabecalho__menu__botao{
+        display: none;
+    }
+
+    .cabecalho__menu__logo{
+        margin: auto;
+    }
+
+    .cabecalho__menu__lista{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .cabecalho__menu__link{
+        text-decoration: none;
+        font-family: var(--fonte-textos);
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--branco);
+    }
+}
+
+/* ########## MEDIA SCREEN 1440px ##########*/
+
+@media screen and (min-width: 1440px) {
+
+    .cabecalho__menu{
+        height: 128px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .cabecalho__menu__lista{
+        justify-content: flex-end;
+        margin-bottom: 0;
+        gap: 2em;
+        margin-right: 8em;
+    }
+
+    .cabecalho__menu__logo{
+        margin-left: 8em;
+    }
+    
 }
