@@ -1,10 +1,21 @@
 @import url("header.css");
 @import url("banner.css");
+@import url("content.css");
+@import url("footer.css");
 
 :root{
     --fonte-titulos: 'Calistoga';
     --fonte-textos: 'Raleway';
+    --fonte-icon: 'Material Icons';
     --azul-escuro: #2E7BA2;
     --branco: #FFFFFF;
     --cinza: #444444;
+    --mostarda: #DF9010;
+    --amarelo: #FACF9D;
+    --gradiente-verao: linear-gradient(#BFDAE6 0%, #FCF0DD 50% , #FACF9D 100%);
+}
+
+body{
+    font-family: var(--fonte-textos);
+    color: var(--cinza);
 }

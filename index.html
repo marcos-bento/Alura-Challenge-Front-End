@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/style.css">
 
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 <body>
@@ -56,14 +60,127 @@
         </div>
     </header>
     <main class="principal">
-        <section class="banner">
-            <h1 class="banner__titulo">Boas-vindas ao #CodeChella2023!</h1>
+        <section class="principal__banner">
+            <h1 class="principal__banner__titulo">Boas-vindas ao #CodeChella2023!</h1>
+        </section>
+        
+        <section class="principal__conteudo">
+            <section class="principal__conteudo__info">
+                <div class="principal__conteudo__imagem" aria-label="Imagem de pessoas apoiadas em uma cerca de metal, curtindo um evento músical"></div>
+                <div class="principal__conteudo__conteudo">
+                    <h2 class="principal__conteudo__titulo">< 11 e 12 de Março > Aluródromo de São Paulo</h2>
+                    <p class="principal__conteudo__texto">Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música, linguagens e, claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!</p>
+                    <a href="#" class="principal__conteudo__botao">
+                        <p class="principal__conteudo__botao__texto">Comprar Ingresso!</p>
+                        <i class="principal__conteudo__botao__icon">local_activity</i>
+                    </a>
+                </div>
+            </section>
+
+            <section class="principal__conteudo__sabado">
+                <h2 class="principal__conteudo__titulo__datas">/Line-Up/</h2>
+
+                <div class="principal__conteudo__titulo__sabado">
+                    <hr class="principal__conteudo__hr">
+                    <h3 class="principal__conteudo__data">SÁBADO <11/03></h3>
+                    <hr class="principal__conteudo__hr">
+                </div>
+
+                <div class="principal__conteudo__textos">
+                    <div class="principal__conteudo__textos__bloco">
+                        <p class="principal__conteudo__texto-linha1">System of a DOM</p>
+                    </div>
+                    
+                    <div class="principal__conteudo__textos__bloco">
+                        <p class="principal__conteudo__texto-linha2">Python Maiden</p>
+                        <p class="principal__conteudo__texto-linha2">Apollo Client 2001</p>
+                        <p class="principal__conteudo__texto-linha2">Bon Java</p>
+                        <p class="principal__conteudo__texto-linha2">NickCallback</p>
+                    </div>
+
+                    <div class="principal__conteudo__textos__bloco">
+                        <p class="principal__conteudo__texto-linha3">Linkin Promises</p>
+                        <p class="principal__conteudo__texto-linha3">Fullstack Fighters</p>
+                        <p class="principal__conteudo__texto-linha3">Papa React</p>
+                        <p class="principal__conteudo__texto-linha3">Angular in Chains</p>
+                    </div>
+
+                    <div class="principal__conteudo__textos__bloco">
+                        <p class="principal__conteudo__texto-linha4">Agnostic Front-end</p>
+                        <p class="principal__conteudo__texto-linha4">SlipkNode</p>
+                        <p class="principal__conteudo__texto-linha4">Pink Flutter</p>
+                        <p class="principal__conteudo__texto-linha4">Kiss</p>
+                    </div>
+                </div> 
+            </section>
+
+            <section class="principal__conteudo__domingo">
+
+                <div class="principal__conteudo__titulo__domingo">
+                    <hr class="principal__conteudo__hr">
+                    <h3 class="principal__conteudo__data__domingo">DOMINGO <12/03></h3>
+                    <hr class="principal__conteudo__hr">
+                </div>
+                
+                <div class="principal__conteudo__textos">
+                    <div class="principal__conteudo__textos__bloco">
+                        <p class="principal__conteudo__texto-linha1">Lana Del Ploy</p>
+                    </div>
+                    
+                    <div class="principal__conteudo__textos__bloco">
+                        <p class="principal__conteudo__texto-linha2">Dua Lib</p>
+                        <p class="principal__conteudo__texto-linha2">The Backnd</p>
+                        <p class="principal__conteudo__texto-linha2">CSS Styles</p>
+                        <p class="principal__conteudo__texto-linha2">ArrayAna Grande</p>
+                        <p class="principal__conteudo__texto-linha2">DJ Query</p>
+                    </div>
+
+                    <div class="principal__conteudo__textos__bloco">
+                        <p class="principal__conteudo__texto-linha3">Miley Cypress</p>
+                        <p class="principal__conteudo__texto-linha3">The Bootstrap Boys</p>
+                        <p class="principal__conteudo__texto-linha3">Json Derulo</p>
+                        <p class="principal__conteudo__texto-linha3">CloudPlay</p>
+                        <p class="principal__conteudo__texto-linha3">Dev Lovato</p>
+                    </div>
+
+                    <div class="principal__conteudo__textos__bloco">
+                        <p class="principal__conteudo__texto-linha4">Kylie MiLOG</p>
+                        <p class="principal__conteudo__texto-linha4">Jenkins Brothers</p>
+                        <p class="principal__conteudo__texto-linha4">Rubycat Dolls</p>
+                    </div>
+                </div> 
+            </section>
+
+            <section class="preFooter" aria-label="Pessoas dançando em um evento músical">
+
+            </section>
         </section>
 
         <script src="index.js"></script>
     </main>
     <footer class="rodape">
-
+        <div class="rodape__links">
+            <img src="assets/img/logoCinza.png" alt="logotipo da CodeChella" class="rodape__links__logo">
+            <h3 class="rodape__links__redesSociais">Acesse nossas redes sociais:</h3>
+            <ul class="rodape__links__redes">
+                <li>
+                    <a href="#"><img src="assets/img/iconeLinkedin.png" alt="Ícone do Linkedin"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/img/iconeGithub.png" alt="Ícone do GitHub"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/img/iconeInstagram.png" alt="Ícone do Instagram"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/img/iconeTwiter.png" alt="Ícone do Twiter"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="rodape__copyright">
+            <h4 class="rodape__copyright__texto">Desenvolvido por Marcos Bento. Projeto fictício sem fins comerciais.</h3>
+        </div>
+            
     </footer>
 </body>
 </html>

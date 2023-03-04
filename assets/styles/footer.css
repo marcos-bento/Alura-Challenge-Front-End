@@ -1,0 +1,32 @@
+.rodape{
+    background-color: var(--amarelo);
+    text-align: center;
+    font-family: var(--fonte-textos);
+    font-size: 20px;
+}
+
+.rodape__links{
+    padding: 24px 24px 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.rodape__links__logo{
+    width: 233.9px;
+    height: 64px;
+}
+
+.rodape__links__redesSociais, .rodape__copyright__texto{
+    line-height: 40px;
+}
+
+.rodape__links__redes{
+    display: flex;
+    gap: 8px;
+}
+
+.rodape__copyright__texto{
+    padding-bottom: 48px;
+}
