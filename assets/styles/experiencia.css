@@ -1,0 +1,104 @@
+.principal__conteudo__exp__imagem1, .principal__conteudo__exp__imagem2, .principal__conteudo__exp__imagem3{
+    width: 312px;
+    height: 381px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 2em auto;
+}
+
+.principal__conteudo__exp__imagem1{
+    background-image: url("../img/experiencia1.png");
+}
+
+.principal__conteudo__exp__imagem2{
+    background-image: url("../img/experiencia2.png");
+}
+
+.principal__conteudo__exp__imagem3{
+    background-image: url("../img/experiencia3.png");
+}
+
+/* ########## 768px ########## */
+
+@media screen and (min-width: 768px){
+
+    .principal__conteudo__exp__imagem1, .principal__conteudo__exp__imagem2, .principal__conteudo__exp__imagem3{
+        width: 609px;
+    }
+
+    .principal__conteudo__exp__imagem1{
+        background-image: url("../img/experiencia1Medio.png");
+    }
+
+    .principal__conteudo__exp__imagem2{
+        background-image: url("../img/experiencia2Medio.png");
+    }
+
+    .principal__conteudo__exp__imagem3{
+        background-image: url("../img/experiencia3Medio.png");
+    }
+
+    .principal__conteudo__texto__exp{
+        padding: 0 120px;
+    }
+
+    .principal__conteudo__texto__exp2, .principal__conteudo__texto__exp3{
+        padding: 0 60px;
+    }
+
+
+}
+
+/* ########## 1440px ########## */
+
+@media screen and (min-width: 1440px){
+
+    .principal__conteudo__exp__imagem1, .principal__conteudo__exp__imagem3{
+        margin-top: 0;
+        margin-left: 121.5px;
+    }
+
+    .principal__conteudo__exp__imagem2{
+        margin-top: 0;
+        margin-right: 121.5px;
+    }
+
+    .principal__conteudo__texto__exp, .principal__conteudo__texto__exp3{
+        padding-right: 0;
+        padding-left: 48px;
+        text-align: left;
+    }
+
+    .principal__conteudo__texto__exp3{
+        padding-right: 48px;
+    }
+
+    .principal__conteudo__texto__exp2{
+        padding-left: 121.5px;
+        padding-right: 48px;
+        text-align: right;
+    }
+
+    .principal__conteudo__conteudo__exp{
+        width: 45%;
+    }
+
+    .principal__conteudo__conteudo__exp2{
+        padding-right: 0;
+    }
+
+    .principal__conteudo__titulo{
+        text-align: left;
+        padding-left: 48px;
+        padding-bottom: 24px;
+    }
+
+    .principal__conteudo__titulo2{
+        text-align: right;
+        padding: 0 48px 24px 0;
+    }
+
+    .principal__conteudo__exp__imagem2{
+        order: 2;
+    }
+}

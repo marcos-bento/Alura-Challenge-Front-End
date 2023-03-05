@@ -154,11 +154,7 @@
 
     .principal__conteudo__imagem{
         width: 609px;
-        height: 381px;
         background-image: url("../img/bannerDatasMedio.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin: 2em auto;
     }
 
     .principal__conteudo__texto{

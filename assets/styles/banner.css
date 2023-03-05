@@ -6,6 +6,14 @@
     background-size: cover;
 }
 
+.principal__banner__experiencia{
+    width: 100%;
+    height: 270px;
+    background-image: url("../img/BannerExperiencia.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .principal__banner__titulo{
     font-family: var(--fonte-titulos);
     font-size: 32px;
@@ -25,6 +33,11 @@
         background-image: url("../img/bannerMedio.png");
     }
 
+    .principal__banner__experiencia{
+        height: 384px;
+        background-image: url("../img/BannerExperienciaMedio.png");
+    }
+
     .principal__banner__titulo{
         font-size: 64px;
         line-height: 83px;
@@ -36,9 +49,14 @@
 /* ########## MEDIA SCREEN 1440px ##########*/
 
 @media screen and (min-width: 1440px) {
-    .banprincipal__bannerner{
+    .principal__banner{
         height: 407px;
         background-image: url("../img/bannerGrande.png");
+    }
+
+    .principal__banner__experiencia{
+        height: 384px;
+        background-image: url("../img/BannerExperienciaGrande.png");
     }
 
     .principal__banner__titulo{
