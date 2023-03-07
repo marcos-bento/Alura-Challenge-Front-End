@@ -63,14 +63,17 @@
 .menu__hamburguer__link{
     text-decoration: none;
     color: var(--branco);
-    text-align: center;
-    
+    text-align: center;   
 }
 
 .menu__hamburguer__texto{
     font-family: var(--fonte-textos);
     font-weight: 700;
     font-size: 20px;
+}
+
+.cabecalho__menu__texto__selecionado{
+    text-decoration-line: underline;
 }
 
 /* ########## MEDIA SCREEN 768px ##########*/

@@ -14,6 +14,10 @@
     --cinza: #444444;
     --mostarda: #DF9010;
     --amarelo: #FACF9D;
+    --azul-legenda: #0E7DF1;
+    --magenta-legenda: #FE016E;
+    --verde-legenda: #01A89E;
+    --roxo-legenda: #3F51B5;
     --gradiente-verao: linear-gradient(#BFDAE6 0%, #FCF0DD 50% , #FACF9D 100%);
 }
 
