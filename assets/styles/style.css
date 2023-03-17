@@ -4,6 +4,7 @@
 @import url("footer.css");
 @import url("experiencia.css");
 @import url("mapaSetores.css");
+@import url("informacoes.css");
 
 :root{
     --fonte-titulos: 'Calistoga';
@@ -15,6 +16,7 @@
     --mostarda: #DF9010;
     --amarelo: #FACF9D;
     --azul-legenda: #0E7DF1;
+    --azul-claro: #C8DEEF;
     --magenta-legenda: #FE016E;
     --verde-legenda: #01A89E;
     --roxo-legenda: #3F51B5;

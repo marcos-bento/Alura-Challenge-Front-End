@@ -1,4 +1,4 @@
-.principal__banner, .principal__banner__experiencia, .principal__banner__mapaSetores{
+.principal__banner, .principal__banner__experiencia, .principal__banner__mapaSetores, .principal__banner__informacoes{
     width: 100%;
     height: 270px;
     background-repeat: no-repeat;
@@ -16,6 +16,11 @@
     background-image: url("../img/bannerMapa.png");
 }
 
+.principal__banner__informacoes{
+    background-image: url("../img/bannerInfos.png");
+    height: 281px;
+}
+
 .principal__banner__titulo{
     font-family: var(--fonte-titulos);
     font-size: 32px;
@@ -30,24 +35,34 @@
 /* ########## MEDIA SCREEN 768px ##########*/
 
 @media screen and (min-width: 768px) {
-    .principal__banner{
+
+    .principal__banner, .principal__banner__experiencia, .principal__banner__mapaSetores, .principal__banner__informacoes{
         height: 384px;
+    }
+
+    .principal__banner{
         background-image: url("../img/bannerMedio.png");
     }
 
     .principal__banner__experiencia{
-        height: 384px;
         background-image: url("../img/bannerExperienciaMedio.png");
     }
 
     .principal__banner__mapaSetores{
-        height: 384px;
         background-image: url("../img/bannerMapaMedio.png");
+    }
+
+    .principal__banner__informacoes{
+        background-image: url("../img/bannerInfosMedio.png");
     }
 
     .principal__banner__titulo{
         font-size: 64px;
         line-height: 83px;
+        top: calc(50% - 32px);
+    }
+
+    .principal__banner__titulo__home{
         top: calc(50% - 64px);
     }
     
@@ -56,19 +71,24 @@
 /* ########## MEDIA SCREEN 1440px ##########*/
 
 @media screen and (min-width: 1440px) {
-    .principal__banner{
+    .principal__banner, .principal__banner__experiencia, .principal__banner__mapaSetores, .principal__banner__informacoes{
         height: 407px;
+    }
+
+    .principal__banner{
         background-image: url("../img/bannerGrande.png");
     }
 
     .principal__banner__experiencia{
-        height: 407px;
         background-image: url("../img/bannerExperienciaGrande.png");
     }
 
     .principal__banner__mapaSetores{
-        height: 407px;
         background-image: url("../img/bannerMapaGrande.png");
+    }
+    
+    .principal__banner__informacoes{
+        background-image: url("../img/bannerInfosGrande.png");
     }
 
     .principal__banner__titulo{
