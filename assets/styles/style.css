@@ -5,12 +5,14 @@
 @import url("experiencia.css");
 @import url("mapaSetores.css");
 @import url("informacoes.css");
+@import url("ingresso.css");
 
 :root{
     --fonte-titulos: 'Calistoga';
     --fonte-textos: 'Raleway';
     --fonte-icon: 'Material Icons';
     --azul-escuro: #2E7BA2;
+    --azul-hover: #519EC5;
     --branco: #FFFFFF;
     --cinza: #444444;
     --mostarda: #DF9010;

@@ -47,6 +47,10 @@
     margin-bottom: 32px;
 }
 
+.principal__conteudo__botao:hover{
+    background-color: var(--azul-hover);
+}
+
 .principal__conteudo__botao__texto{
     color: var(--branco);
     font-size: 20px;
