@@ -41,6 +41,10 @@
     width: 164px;
 }
 
+.principal__banner__ingressoComprado .principal__banner__titulo{
+    margin: 0 24px;
+}
+
 /* ########## 768 px ########## */
 
 @Media screen and (min-width: 768px){

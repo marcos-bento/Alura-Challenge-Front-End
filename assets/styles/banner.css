@@ -1,4 +1,10 @@
-.principal__banner, .principal__banner__experiencia, .principal__banner__mapaSetores, .principal__banner__informacoes, .principal__banner__ingresso{
+/* Dúvidas: 
+As classes abaixo compartilham de uma configuração igual, é melhor do jeito que está? Ou criando uma classe específica para essa configuração como "principal__banner" e cada 
+página ter sua própria classe extra para alterar o background-image ?
+
+*/
+
+.principal__banner, .principal__banner__experiencia, .principal__banner__mapaSetores, .principal__banner__informacoes, .principal__banner__ingresso, .principal__banner__ingressoComprado{
     width: 100%;
     height: 270px;
     background-repeat: no-repeat;
@@ -26,6 +32,11 @@
     height: 281px;
 }
 
+.principal__banner__ingressoComprado{
+    background-image: url("../img/bannerIngressoComprado.png");
+    height: 281px;
+}
+
 .principal__banner__titulo{
     font-family: var(--fonte-titulos);
     font-size: 32px;
@@ -41,7 +52,7 @@
 
 @media screen and (min-width: 768px) {
 
-    .principal__banner, .principal__banner__experiencia, .principal__banner__mapaSetores, .principal__banner__informacoes, .principal__banner__ingresso{
+    .principal__banner, .principal__banner__experiencia, .principal__banner__mapaSetores, .principal__banner__informacoes, .principal__banner__ingresso, .principal__banner__ingressoComprado{
         height: 384px;
     }
 
@@ -65,6 +76,10 @@
         background-image: url("../img/bannerIngressoMedio.png");
     }
 
+    .principal__banner__ingressoComprado{
+        background-image: url("../img/bannerIngressoCompradoMedio.png");
+    }
+
     .principal__banner__titulo{
         font-size: 64px;
         line-height: 83px;
@@ -80,7 +95,7 @@
 /* ########## MEDIA SCREEN 1440px ##########*/
 
 @media screen and (min-width: 1440px) {
-    .principal__banner, .principal__banner__experiencia, .principal__banner__mapaSetores, .principal__banner__informacoes, .principal__banner__ingresso{
+    .principal__banner, .principal__banner__experiencia, .principal__banner__mapaSetores, .principal__banner__informacoes, .principal__banner__ingresso, .principal__banner__ingressoComprado{
         height: 407px;
     }
 
@@ -102,6 +117,10 @@
     
     .principal__banner__ingresso{
         background-image: url("../img/bannerIngressoGrande.png");
+    }
+
+    .principal__banner__ingressoComprado{
+        background-image: url("../img/bannerIngressoCompradoGrande.png");
     }
 
     .principal__banner__titulo{
