@@ -45,6 +45,66 @@
     margin: 0 24px;
 }
 
+.principal__conteudo__texto__container{
+    padding: 64px 24px 32px 24px;
+}
+
+.principal__conteudo__texto__ingresso{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: center;
+}
+
+.principal__conteudo__ingresso{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 0 24px;
+    background: var(--gradiente-verao);
+    padding: 32px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.principal__conteudo__ingresso__superior{
+    display: flex;
+    justify-content: space-between;
+}
+
+.principal__conteudo__ingresso__superior__logo{
+    width: 117px;
+    height: 32px;
+}
+
+.principal__conteudo__ingresso__superior__icone{
+    width: 32px;
+    height: 32px;
+}
+
+.principal__conteudo__ingresso__centro__qrcode-Medio, .principal__conteudo__ingresso__centro__qrcode-Grande{
+    display: none;
+}
+
+.principal__conteudo__ingresso__centro__qrcode{
+    display: block;
+    width: 248px;
+    height: 190px;
+    margin: auto;
+}
+
+.principal__conteudo__ingresso__inferior ul li{
+    font-size: 20px;
+    color: var(--cinza);
+    line-height: 25px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.principal__conteudo__ingresso__comprado{
+    padding-bottom: 40px;
+}
+
 /* ########## 768 px ########## */
 
 @Media screen and (min-width: 768px){
@@ -57,6 +117,19 @@
 
     .principal__formulario__container{
         margin: 0 60px;
+    }
+
+    .principal__conteudo__texto__ingresso{
+        margin: 0 60px;
+    }
+
+    .principal__conteudo__ingresso__centro__qrcode-Medio{
+        display: block;
+        margin: auto;
+    }
+
+    .principal__conteudo__ingresso__centro__qrcode{
+        display: none;
     }
 }
 
@@ -98,4 +171,47 @@
         grid-column: 2 / 2;
         grid-row: 2 / 2;
     }
+
+    .principal__conteudo__ingresso__centro__qrcode-Medio{
+        display: none;
+    }
+
+    .principal__conteudo__ingresso__centro__qrcode-Grande{
+        display: block;
+    }
+
+    .principal__conteudo__ingresso{
+        box-sizing: border-box;
+        width: 792px;
+        height: 350px;
+        margin: 0 324px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 32px 48px;
+    }
+
+    .principal__conteudo__ingresso__superior{
+        grid-column: 1 / 2 span;
+    }
+
+    .principal__conteudo__ingresso__centro{
+        grid-row: 2 / 2;
+        width: 189px;
+        padding: 0;
+    }
+
+    .principal__conteudo__ingresso__inferior{
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+    }
+
+    .principal__conteudo__ingresso__inferior ul li{
+        text-align: left;
+    }
+
+    .principal__conteudo__ingresso__inferior .principal__conteudo__texto__ingresso{
+        text-align: left;
+        margin: 0;
+    }
+    
 }
