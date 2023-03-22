@@ -71,32 +71,36 @@
     
                 <div class="principal__formulario__container">
                     <h3 class="principal__formulario__container__label">Nome Completo:</h3>
-                    <input type="text" class="form__input" placeholder="Insira seu nome completo" autocomplete="name">
+                    <input type="text" class="form__input form__input__nome" placeholder="Insira seu nome completo" autocomplete="name">
+                    <p class="principal__formulario__texto__erro principal__formulario__erro__nome">O nome precisa ter no mínimo 5 caracteres!</p>
     
                     <h3 class="principal__formulario__container__label">insira seu e-mail:</h3>
-                    <input type="text" class="form__input" placeholder="Insira seu melhor e-mail" autocomplete="email">
+                    <input type="text" class="form__input form__input__email" placeholder="Insira seu melhor e-mail" autocomplete="email">
+                    <p class="principal__formulario__texto__erro principal__formulario__erro__email">O campo e-mail precisa ser um e-mail válido!</p>
+
                     
                     <div class="principal__formulario__container__baixo">
                         <h3 class="principal__formulario__container__label principal__formulario__container__label-baixo1">insira seu CPF:</h3>
-                        <input type="text" class="form__input form__input-baixo1" placeholder="Insira seu CPF" autocomplete="cpf">
+                        <input type="text" class="form__input form__input-baixo1 form__input__cpf" placeholder="Insira seu CPF" autocomplete="cpf">
+                        <p class="principal__formulario__texto__erro principal__formulario__erro__cpf">O CPF precisa ser um CPF válido!</p>
+
         
                         <h3 class="principal__formulario__container__label principal__formulario__container__label-baixo2">Data de nascimento:</h3>
-                        <input type="date" class="form__input form__input-baixo2">
+                        <input type="date" class="form__input form__input-baixo2 form__input__data">
+                        <p class="principal__formulario__texto__erro principal__formulario__erro__data">A idade idade mínima para o evento é 13 anos!</p>
+
                     </div>
-                    <a href="compraIngresso.html" class="principal__conteudo__botao botao__ingresso">
+                    <button class="principal__conteudo__botao botao__ingresso">
                         <p class="principal__conteudo__botao__texto">Avançar!</p>
                         <i class="principal__conteudo__botao__icon">arrow_forward</i>
-                    </a>
+                    </button>
                 </div>
     
             </section>
 
         </section>
        
-        
-        
 
-        <script src="index.js"></script>
     </main>
     <footer class="rodape">
         <div class="rodape__links">
@@ -125,5 +129,7 @@
         </div>
             
     </footer>
+    <script src="ingresso.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

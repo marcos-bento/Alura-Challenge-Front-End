@@ -37,8 +37,30 @@
     box-sizing: border-box;
 }
 
+.form__input-error{
+    border: 2px solid red;
+    margin-bottom: 0;
+}
+
+.form__input-correct{
+    border: 2px solid green;
+    margin: 8px 0 32px 0;
+}
+
+.principal__formulario__texto__erro{
+    font-size: 12px;
+    color: red;
+    display: none;
+    margin-bottom: 32px;
+}
+
+.principal__formulario__texto__erro-ativo{
+    display: block;
+}
+
 .botao__ingresso{
     width: 164px;
+    border: none;
 }
 
 .principal__banner__ingressoComprado .principal__banner__titulo{
@@ -148,8 +170,17 @@
     .principal__formulario__container__baixo{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
+        column-gap: 24px;
     }
+
+    .principal__formulario__container__baixo .form__input__cpf{
+        margin-bottom: 0;
+    }
+
+    .principal__formulario__container__baixo .form__input__data{
+        margin-bottom: 0;
+    }
+    
 
     .principal__formulario__container__label-baixo1{
         grid-row: 1 / 1;
@@ -214,4 +245,7 @@
         margin: 0;
     }
     
+    .botao__ingresso{
+        margin-top: 32px;
+    }
 }
