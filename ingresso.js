@@ -115,7 +115,48 @@ function validaCPF (cpf){
 }
 
 function validaData (data){
-    if (data.length == 10){
-        // do something
+    // valida se a data é válida        
+    if (data.length === 10 && data.match(/^\d{4}-\d{2}-\d{2}$/) && validaIdadeMinima(data)){
+        formData.classList.remove('form__input-error');
+        txtErroData.classList.remove('principal__formulario__texto__erro-ativo');
+        formData.classList.add('form__input-correct');
+    }else{
+        formData.classList.remove('form__input-correct');
+        formData.classList.add('form__input-error');
+        txtErroData.classList.add('principal__formulario__texto__erro-ativo');
+        return false
+    }
+
+    function validaIdadeMinima (data){
+        // Carrega a data de hoje
+        const hoje = new Date();
+        const anoHoje = hoje.getFullYear();
+        const mesHoje = hoje.getMonth() + 1;  
+        const diaHoje = hoje.getDate();
+        
+        const anoInformado = parseInt(data.slice(0,4));
+        const mesInformado = parseInt(data.slice(5,7));
+        const diaInformado = parseInt(data.slice(8,10));
+
+        // Valida se a pessoa possui mais do que 13 anos
+        if ( (anoHoje - 13) > anoInformado){
+            return true;
+        } else if ((anoHoje - 13) === anoInformado){ // Se nasceu a exatos 13 anos atrás
+            if (mesHoje > mesInformado){
+                return true;
+            } else if (mesHoje === mesInformado) { // Se nasceu nesse mês há 13 anos atrás
+                if (diaHoje > diaInformado){
+                    return true;
+                } else if (diaHoje === diaInformado) { // Hoje é seu aniversário de 13 anos!
+                    alert('Parabéns pelo seu aniversário!')
+                    return true;
+                } else {
+                    return false;
+                }   
+            }
+        } else {
+            return false;
+        }
+
     }
 }
