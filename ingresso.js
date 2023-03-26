@@ -10,16 +10,11 @@ const txtErroCPF = document.querySelector('.principal__formulario__erro__cpf');
 const txtErroData = document.querySelector('.principal__formulario__erro__data');
 
 botaoAvancarIngresso.addEventListener('click', () =>{
-	enviarIngresso(dadosDoCliente);
-})
+    enviarIngresso(dadosDoCliente);
+});     
 
 // função que permite receber apenas números no campo CPF
 formCPF.addEventListener('keydown', function(event) {
-    // Verifica se a tecla pressionada é um número ou uma tecla de controle
-    if (event.keyCode < 48 || event.keyCode > 57 && event.keyCode < 96 || event.keyCode > 105) {
-      // Cancela a entrada se não for um número
-      event.preventDefault();
-    } 
     // verifica se o usuário pressionou backspace e deleta o último número digitado
     if (event.keyCode === 8) {
         this.value = this.value.substring(0, this.value.length - 1);
@@ -28,6 +23,15 @@ formCPF.addEventListener('keydown', function(event) {
     if (event.keyCode === 9) {
         event.preventDefault();
         formData.focus(); 
+    }
+
+    if (this.value.length>10){
+        event.preventDefault();
+    } else{
+        if (event.keyCode < 48 || event.keyCode > 57 && event.keyCode < 96 || event.keyCode > 105) {
+            // Cancela a entrada se não for um número
+            event.preventDefault();
+        } 
     }
 });
 
@@ -55,7 +59,17 @@ for (let index = 0; index < dadosDoCliente.length; index++) {
 }
 
 function enviarIngresso (dadosDoCliente){
+    if (validaNome(dadosDoCliente[0].value) && validaEmail(dadosDoCliente[1].value) && validaCPF(dadosDoCliente[2].value) && validaData(dadosDoCliente[3].value) ){
+        console.log("processando...");
+        const dados = dadosDoCliente;
+        localStorage.setItem("nome", dados[0].value);
+        
 
+        window.location.href = "compraIngresso.html";
+
+    } else {
+        console.log('Por favor preencha todos os campos!');
+    }
 }
 
 function validaNome (nome){
@@ -70,6 +84,7 @@ function validaNome (nome){
         formNome.classList.remove('form__input-error');
         txtErroNome.classList.remove('principal__formulario__texto__erro-ativo');
         formNome.classList.add('form__input-correct');
+        return true
     }
 }
 
@@ -85,6 +100,7 @@ function validaEmail (email){
         formEmail.classList.remove('form__input-error');
         txtErroEmail.classList.remove('principal__formulario__texto__erro-ativo');
         formEmail.classList.add('form__input-correct');
+        return true
     }
 }
 
@@ -94,6 +110,7 @@ function validaCPF (cpf){
         formCPF.classList.remove('form__input-error');
         txtErroCPF.classList.remove('principal__formulario__texto__erro-ativo');
         formCPF.classList.add('form__input-correct');
+        return true
     }else{
         formCPF.classList.remove('form__input-correct');
         formCPF.classList.add('form__input-error');
@@ -120,6 +137,7 @@ function validaData (data){
         formData.classList.remove('form__input-error');
         txtErroData.classList.remove('principal__formulario__texto__erro-ativo');
         formData.classList.add('form__input-correct');
+        return true
     }else{
         formData.classList.remove('form__input-correct');
         formData.classList.add('form__input-error');
@@ -157,6 +175,5 @@ function validaData (data){
         } else {
             return false;
         }
-
     }
 }
