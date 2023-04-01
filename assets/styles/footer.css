@@ -1,5 +1,5 @@
 .rodape{
-    background-color: var(--amarelo);
+    background-color: var(--footer-background);
     text-align: center;
     font-family: var(--fonte-textos);
     font-size: 20px;

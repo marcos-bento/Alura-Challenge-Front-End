@@ -1,5 +1,5 @@
 .principal__conteudo{
-    background: var(--gradiente-verao);
+    background: var(--background-color);
 }
 
 .principal__conteudo__info{
@@ -39,9 +39,9 @@
     gap: 1em;
     text-decoration: none;
     margin: auto;
-    background-color: var(--azul-escuro);
+    background-color: var(--container-color);
     border-radius: 16px;
-    box-shadow: 4px 4px 0px var(--cinza);
+    box-shadow: 4px 4px 0px var(--button-shadow);
     width: 312px;
     height: 56px;
     margin-bottom: 32px;
@@ -90,7 +90,7 @@
     margin: 48px 24px;
     text-align: center;
     color: var(--branco);
-    background-color: var(--mostarda);
+    background-color: var(--h3-background);
 }
 
 .principal__conteudo__data__domingo{
@@ -184,7 +184,7 @@
     .principal__conteudo__hr{
         display: block;
         height: 0;
-        border: 1px solid var(--mostarda);
+        border: 1px solid var(--h3-background);
         flex-grow: 1;
     }
 

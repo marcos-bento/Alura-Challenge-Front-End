@@ -9,7 +9,7 @@
 
 .principal__conteudo__container__accordion {
     display: block;
-    background-color: var(--azul-escuro);
+    background-color: var(--container-color);
     color: var(--branco);
     font-family: var(--fonte-textos);
     font-weight: 700;

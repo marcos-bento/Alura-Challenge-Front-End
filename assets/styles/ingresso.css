@@ -9,7 +9,7 @@
     font-weight: 400;
     line-height: 42px;
     margin: 32px 24px 48px 24px;
-    color: var(--cinza);
+    color: var(--text-color);
     text-align: center;
 }
 
@@ -25,7 +25,7 @@
     font-weight: 700;
     line-height: 38px;
     text-align: left;
-    color: var(--cinza);
+    color: var(--text-color);
 }
 
 .form__input{
@@ -83,7 +83,7 @@
     flex-direction: column;
     gap: 32px;
     margin: 0 24px;
-    background: var(--gradiente-verao);
+    background: var(--background-color);
     padding: 32px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -116,7 +116,7 @@
 
 .principal__conteudo__ingresso__inferior ul li{
     font-size: 20px;
-    color: var(--cinza);
+    color: var(--text-color);
     line-height: 25px;
     font-weight: 500;
     text-align: center;
@@ -215,7 +215,7 @@
         box-sizing: border-box;
         width: 792px;
         height: 350px;
-        margin: 0 324px;
+        margin: auto;
         display: grid;
         grid-template-columns: auto 1fr;
         gap: 32px 48px;

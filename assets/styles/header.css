@@ -1,7 +1,7 @@
 /* Cabecalho de navegacao */
 .cabecalho__menu{
     display: flex;
-    background-color: var(--azul-escuro);
+    background-color: var(--container-color);
     justify-content: space-between;
     align-items: center;
     height: 128px;
@@ -41,9 +41,9 @@
 }
 
 .menu__hamburguer__lista{
-    background-color: var(--azul-escuro);
+    background-color: var(--container-color);
     width: 193px;
-    height: 243px;
+    height: 283px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -54,9 +54,10 @@
     padding: 19px 0;
     width: 161px;
     border-bottom: 1px solid var(--branco);
+    text-align: center;
 }
 
-.menu__hamburguer__linha:nth-child(4n){
+.menu__hamburguer__linha:nth-child(5n){
     border-bottom: none;
 }
 
@@ -64,6 +65,12 @@
     text-decoration: none;
     color: var(--branco);
     text-align: center;   
+}
+
+.menu__hamburguer__tema{
+    color: var(--branco);
+    border: none;
+    background-color: transparent;
 }
 
 .menu__hamburguer__texto{

@@ -41,7 +41,7 @@ página ter sua própria classe extra para alterar o background-image ?
     font-family: var(--fonte-titulos);
     font-size: 32px;
     font-weight: 400;
-    color: var(--cinza);
+    color: var(--text-color);
     line-height: 42px;
     text-align: center;
     position: relative;
