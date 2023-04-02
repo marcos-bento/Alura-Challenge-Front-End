@@ -1,3 +1,4 @@
+/* Importando as outras páginas CSS */
 @import url("header.css");
 @import url("banner.css");
 @import url("content.css");
@@ -7,6 +8,7 @@
 @import url("informacoes.css");
 @import url("ingresso.css");
 
+/* Declarando variáveis de uso comúm, para cores, fontes e outros estilos */
 :root{
     --fonte-titulos: 'Calistoga';
     --fonte-textos: 'Raleway';
@@ -26,6 +28,7 @@
     --background-color: linear-gradient(#BFDAE6 0%, #FCF0DD 50% , #FACF9D 100%);
 }
 
+/* Estilo do Body padrão em todas as páginas */
 body{
     font-family: var(--fonte-textos);
     color: var(--text-color);
