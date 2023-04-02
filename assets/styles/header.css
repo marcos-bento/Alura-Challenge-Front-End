@@ -57,7 +57,7 @@
     text-align: center;
 }
 
-.menu__hamburguer__linha:nth-child(5n){
+.menu__hamburguer__linha:nth-child(4n){
     border-bottom: none;
 }
 
