@@ -1,5 +1,5 @@
 # Projeto Alura Challenge 2023 - CodeChela
-> Este projeto é um site que foi criado para praticar e treinar as principais técnicas de desenvolvimento e programação, como Mobile First, Responsividade, Técnicas de SEO, Manipulação via DOM e muito mais, utilizando HTML5, CSS3 e JAVASCRIPT.
+> Este foi o primeiro Alura Challenge Front end e o projeto é um site que foi criado para praticar e treinar as principais técnicas de desenvolvimento e programação, como Mobile First, Responsividade, Técnicas de SEO, Manipulação via DOM e muito mais, utilizando HTML5, CSS3 e JAVASCRIPT.
 
 ![](/banner.PNG)
 
