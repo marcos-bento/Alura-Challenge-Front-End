@@ -21,7 +21,6 @@ A manipulação da página foi feita com JavaScript, utilizando o DOM (Document 
 
 Além disso, o projeto foi otimizado para SEO, utilizando meta tags e estruturação correta de conteúdo para melhorar sua visibilidade nos mecanismos de busca.
 
-## Funcionalidades
 O site possui algumas funcionalidades básicas que foram implementadas para demonstrar o uso do JavaScript e do DOM:
 
 * Alteração do conteúdo da página por meio de botões
