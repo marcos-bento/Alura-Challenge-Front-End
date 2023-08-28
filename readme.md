@@ -23,7 +23,7 @@ Além disso, o projeto foi otimizado para SEO, utilizando meta tags e estrutura�
 
 O site possui algumas funcionalidades básicas que foram implementadas para demonstrar o uso do JavaScript e do DOM:
 
-* Alteração do conteúdo da página por meio de botões
-* Criação dinâmica de elementos HTML
-* Validação de formulários
-* Manipulação de elementos HTML e CSS em tempo real
+Alteração do conteúdo da página por meio de botões
+Criação dinâmica de elementos HTML
+Validação de formulários
+Manipulação de elementos HTML e CSS em tempo real
